@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>码单器内置记忆库 v8.2</title>
+<title>码单器内置记忆库 v8.3</title>
 <style>
   :root {
     --bg:#edf3f8;
@@ -54,9 +54,9 @@
   <section class="card">
     <h2 class="title">内置数据</h2>
     <div class="grid">
-      <div class="stat"><b>143</b><span>陪玩名单</span></div>
+      <div class="stat"><b>199</b><span>陪玩名单</span></div>
       <div class="stat"><b>26</b><span>老板记忆库</span></div>
-      <div class="stat"><b>105</b><span>单价记忆库</span></div>
+      <div class="stat"><b>17</b><span>单价记忆库</span></div>
     </div>
     <div class="actions">
       <button class="primary" id="copyBackupBtn">复制记忆库备份</button>
@@ -82,20 +82,25 @@
 </div>
 <script id="embeddedBackup" type="application/json">{
   "backupType": "pw-order-tool-backup",
-  "schemaVersion": 3,
-  "appVersion": "8.2.23",
-  "exportedAt": "2026-07-15T23:59:14.483Z",
+  "schemaVersion": 4,
+  "appVersion": "8.3.2",
+  "exportedAt": "2026-08-04T12:28:13.948Z",
   "moduleVersions": {
     "playableNames": 2,
     "bossMemory": 1,
-    "priceLibraries": 2,
+    "priceLibraries": 3,
     "priceMemory": 1,
-    "lockedFields": 1,
-    "nameLearningData": 2,
-    "layoutTemplates": 1
+    "modeRatios": 1,
+    "nameLearningData": 2
   },
   "modules": {
     "playableNames": [
+      {
+        "name": "emo",
+        "original": "18抑郁帅哥",
+        "timestamp": 1784644266240,
+        "source": "interactive"
+      },
       {
         "name": "安然",
         "original": "19天才少男",
@@ -103,9 +108,87 @@
         "source": "interactive"
       },
       {
+        "name": "小怪",
+        "original": "小怪",
+        "timestamp": 1783795003056,
+        "source": "interactive"
+      },
+      {
+        "name": "绛于",
+        "original": "绛于",
+        "timestamp": 1783794796573,
+        "source": "interactive"
+      },
+      {
+        "name": "落笛",
+        "original": "落笛",
+        "timestamp": 1783794796573,
+        "source": "interactive"
+      },
+      {
+        "name": "喵喵",
+        "original": "喵喵",
+        "timestamp": 1783794796572,
+        "source": "interactive"
+      },
+      {
+        "name": "小珏",
+        "original": "小珏",
+        "timestamp": 1783794796572,
+        "source": "interactive"
+      },
+      {
+        "name": "贝斯",
+        "original": "贝斯麦永存",
+        "timestamp": 1783794557487,
+        "source": "interactive"
+      },
+      {
+        "name": "烟雾",
+        "original": "烟雾朝朝雾雾",
+        "timestamp": 1783794557487,
+        "source": "interactive"
+      },
+      {
+        "name": "橘子花",
+        "original": "橘花朝花夕拾",
+        "timestamp": 1783794557486,
+        "source": "interactive"
+      },
+      {
+        "name": "小鸣",
+        "original": "小鸣",
+        "timestamp": 1783794557486,
+        "source": "interactive"
+      },
+      {
+        "name": "小八",
+        "original": "小八",
+        "timestamp": 1783794557485,
+        "source": "interactive"
+      },
+      {
+        "name": "小元",
+        "original": "小元",
+        "timestamp": 1783794557485,
+        "source": "interactive"
+      },
+      {
+        "name": "佳乐",
+        "original": "佳乐",
+        "timestamp": 1783794557484,
+        "source": "interactive"
+      },
+      {
         "name": "布奇",
         "original": "布奇",
-        "timestamp": 1783702268862,
+        "timestamp": 1783786914297,
+        "source": "interactive"
+      },
+      {
+        "name": "向北",
+        "original": "向北",
+        "timestamp": 1783786914297,
         "source": "interactive"
       },
       {
@@ -181,12 +264,6 @@
         "source": "interactive"
       },
       {
-        "name": "小怪",
-        "original": "小怪",
-        "timestamp": 1783628093324,
-        "source": "interactive"
-      },
-      {
         "name": "香芋",
         "original": "香芋",
         "timestamp": 1783628070371,
@@ -220,12 +297,6 @@
         "name": "小影",
         "original": "小影",
         "timestamp": 1783628070368,
-        "source": "interactive"
-      },
-      {
-        "name": "向北",
-        "original": "向北",
-        "timestamp": 1783628070367,
         "source": "interactive"
       },
       {
@@ -541,12 +612,6 @@
         "source": "interactive"
       },
       {
-        "name": "绛于",
-        "original": "绛于",
-        "timestamp": 1779576982513,
-        "source": "interactive"
-      },
-      {
         "name": "落幕",
         "original": "落幕",
         "timestamp": 1779576982513,
@@ -826,12 +891,6 @@
         "name": "坨坨",
         "original": "坨坨",
         "timestamp": 1778169314747,
-        "source": "interactive"
-      },
-      {
-        "name": "emo",
-        "original": "emo",
-        "timestamp": 1778169314746,
         "source": "interactive"
       },
       {
@@ -1364,113 +1423,46 @@
       }
     ],
     "priceLibraries": {
-      "schemaVersion": 2,
-      "activeLibraryId": "price_library_f3a10672",
+      "schemaVersion": 3,
+      "activeLibraryId": "price_library_6c8db484",
       "libraries": [
         {
-          "id": "price_library_f3a10672",
+          "id": "price_library_default",
+          "name": "默认价格表",
+          "createdAt": 1785844260811,
+          "updatedAt": 1785845800453,
+          "items": [],
+          "rules": [],
+          "surcharges": [],
+          "giftMemories": []
+        },
+        {
+          "id": "price_library_6c8db484",
           "name": "下次见常驻价格表",
           "createdAt": 1784111046966,
-          "updatedAt": 1784158960934,
+          "updatedAt": 1785845800465,
           "items": [
             {
-              "id": "price_item_842ea3c4",
-              "serviceType": "零食店全套礼物单",
-              "serviceKey": "零食店全套礼物单",
-              "unitPrice": 1234,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784158895019,
-              "updatedAt": 1784158895019,
-              "lastUsed": 1784158895019
-            },
-            {
-              "id": "price_item_48bf5b42",
-              "serviceType": "花园全套礼物单",
-              "serviceKey": "花园全套礼物单",
-              "unitPrice": 1466,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784158737957,
-              "updatedAt": 1784158737957,
-              "lastUsed": 1784158737957
-            },
-            {
-              "id": "price_item_cfa2abb2",
-              "serviceType": "睡莲私语",
-              "serviceKey": "睡莲私语",
-              "unitPrice": 520,
-              "settleType": "gift",
-              "usageCount": 1,
+              "id": "price_item_9334aacd",
+              "serviceType": "鹅鸭杀",
+              "serviceKey": "鹅鸭杀",
+              "unitPrice": 35,
+              "settleType": "hour",
+              "usageCount": 25,
               "createdAt": 1784111791750,
-              "updatedAt": 1784158660136,
-              "lastUsed": 1784158660136
+              "updatedAt": 1785653039408,
+              "lastUsed": 1785653039408
             },
             {
-              "id": "price_item_70dc6b3c",
-              "serviceType": "KFC疯狂星期四全套礼物单",
-              "serviceKey": "kfc疯狂星期四全套礼物单",
-              "unitPrice": 602,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784158584018,
-              "updatedAt": 1784158584018,
-              "lastUsed": 1784158584018
-            },
-            {
-              "id": "price_item_97f41776",
-              "serviceType": "神之一脚",
-              "serviceKey": "神之一脚",
-              "unitPrice": 520,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784158305167,
-              "updatedAt": 1784158305167,
-              "lastUsed": 1784158305167
-            },
-            {
-              "id": "price_item_5f0087f4",
-              "serviceType": "变音药水",
-              "serviceKey": "变音药水",
-              "unitPrice": 288,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784158245850,
-              "lastUsed": 1784158245850
-            },
-            {
-              "id": "price_item_c0a5c4d4",
-              "serviceType": "环球全套礼物单",
-              "serviceKey": "环球全套礼物单",
-              "unitPrice": 520,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784158171678,
-              "updatedAt": 1784158171678,
-              "lastUsed": 1784158171678
-            },
-            {
-              "id": "price_item_c0548baf",
-              "serviceType": "🍬",
-              "serviceKey": "🍬",
-              "unitPrice": 5,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784157992898,
-              "updatedAt": 1784157992898,
-              "lastUsed": 1784157992898
-            },
-            {
-              "id": "price_item_e6c87a67",
-              "serviceType": "月星",
-              "serviceKey": "月星",
-              "unitPrice": 172,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784157930451,
-              "updatedAt": 1784157930451,
-              "lastUsed": 1784157930451
+              "id": "price_item_9fdbb491",
+              "serviceType": "一起看",
+              "serviceKey": "一起看",
+              "unitPrice": 35,
+              "settleType": "hour",
+              "usageCount": 7,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784644581120,
+              "lastUsed": 1784644581120
             },
             {
               "id": "price_item_7816cbf0",
@@ -1478,7 +1470,7 @@
               "serviceKey": "端游",
               "unitPrice": 50,
               "settleType": "hour",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157903056,
               "lastUsed": 1784157903056
@@ -1489,7 +1481,7 @@
               "serviceKey": "纯文",
               "unitPrice": 30,
               "settleType": "hour",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157820241,
               "lastUsed": 1784157820241
@@ -1500,7 +1492,7 @@
               "serviceKey": "树洞",
               "unitPrice": 42,
               "settleType": "hour",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157800252,
               "lastUsed": 1784157800252
@@ -1511,7 +1503,7 @@
               "serviceKey": "其他手游",
               "unitPrice": 40,
               "settleType": "hour",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157775522,
               "lastUsed": 1784157775522
@@ -1522,7 +1514,7 @@
               "serviceKey": "纯连",
               "unitPrice": 40,
               "settleType": "hour",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157747891,
               "lastUsed": 1784157747891
@@ -1533,7 +1525,7 @@
               "serviceKey": "蹭金标",
               "unitPrice": 18,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157708296,
               "lastUsed": 1784157708296
@@ -1544,7 +1536,7 @@
               "serviceKey": "教学单",
               "unitPrice": 6,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157652793,
               "lastUsed": 1784157652793
@@ -1566,7 +1558,7 @@
               "serviceKey": "技术娱乐",
               "unitPrice": 17,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784157600680,
               "updatedAt": 1784157600680,
               "lastUsed": 1784157600680
@@ -1577,21 +1569,10 @@
               "serviceKey": "技术匹配",
               "unitPrice": 17,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784157583256,
               "lastUsed": 1784157583256
-            },
-            {
-              "id": "price_item_9334aacd",
-              "serviceType": "鹅鸭杀",
-              "serviceKey": "鹅鸭杀",
-              "unitPrice": 35,
-              "settleType": "hour",
-              "usageCount": 3,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784128949864,
-              "lastUsed": 1784128949864
             },
             {
               "id": "price_item_4aee9315",
@@ -1599,7 +1580,7 @@
               "serviceKey": "娱乐匹配",
               "unitPrice": 13,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784112051436,
               "updatedAt": 1784112051436,
               "lastUsed": 1784112051436
@@ -1610,7 +1591,7 @@
               "serviceKey": "娱技匹配",
               "unitPrice": 15,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784112031333,
               "lastUsed": 1784112031333
@@ -1621,7 +1602,7 @@
               "serviceKey": "小国蹭标",
               "unitPrice": 28,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784111934405,
               "lastUsed": 1784111934405
@@ -1632,329 +1613,10 @@
               "serviceKey": "大国蹭标",
               "unitPrice": 48,
               "settleType": "round",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784111861657,
               "lastUsed": 1784111861657
-            },
-            {
-              "id": "price_item_d2edcdba",
-              "serviceType": "爱的卡牌",
-              "serviceKey": "爱的卡牌",
-              "unitPrice": 288,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_5bbe751d",
-              "serviceType": "冰岛",
-              "serviceKey": "冰岛",
-              "unitPrice": 104,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_ca451fc0",
-              "serviceType": "宠物项圈",
-              "serviceKey": "宠物项圈",
-              "unitPrice": 365,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_2c3fd099",
-              "serviceType": "绿色心情",
-              "serviceKey": "绿色心情",
-              "unitPrice": 222,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_570f5bc9",
-              "serviceType": "满天星",
-              "serviceKey": "满天星",
-              "unitPrice": 10,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_bc77b925",
-              "serviceType": "美国",
-              "serviceKey": "美国",
-              "unitPrice": 104,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_190baffd",
-              "serviceType": "奶油蛋糕",
-              "serviceKey": "奶油蛋糕",
-              "unitPrice": 128,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_6cb5e845",
-              "serviceType": "日本",
-              "serviceKey": "日本",
-              "unitPrice": 104,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_2577ca7f",
-              "serviceType": "瑞士",
-              "serviceKey": "瑞士",
-              "unitPrice": 104,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_48f6aa27",
-              "serviceType": "少女发带",
-              "serviceKey": "少女发带",
-              "unitPrice": 15,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_1e85c347",
-              "serviceType": "天使之翼",
-              "serviceKey": "天使之翼",
-              "unitPrice": 88,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_9d385fce",
-              "serviceType": "甜心便签",
-              "serviceKey": "甜心便签",
-              "unitPrice": 188,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_8aa25b8e",
-              "serviceType": "同心结",
-              "serviceKey": "同心结",
-              "unitPrice": 5,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_bb0bb298",
-              "serviceType": "雪花恋歌",
-              "serviceKey": "雪花恋歌",
-              "unitPrice": 35,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_e349a936",
-              "serviceType": "一束花开",
-              "serviceKey": "一束花开",
-              "unitPrice": 52,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_a5058988",
-              "serviceType": "英国",
-              "serviceKey": "英国",
-              "unitPrice": 104,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751,
-              "lastUsed": 1784111791751
-            },
-            {
-              "id": "price_item_93f7bac5",
-              "serviceType": "爱吃小零食",
-              "serviceKey": "爱吃小零食",
-              "unitPrice": 128,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_66c60c64",
-              "serviceType": "薄荷糖果",
-              "serviceKey": "薄荷糖果",
-              "unitPrice": 168,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_9229a381",
-              "serviceType": "冰芙果酱",
-              "serviceKey": "冰芙果酱",
-              "unitPrice": 128,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_8ee80c59",
-              "serviceType": "冰淇淋",
-              "serviceKey": "冰淇淋",
-              "unitPrice": 12,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_24216587",
-              "serviceType": "啵啵奶茶",
-              "serviceKey": "啵啵奶茶",
-              "unitPrice": 52,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_77e7f6a2",
-              "serviceType": "草莓牛奶",
-              "serviceKey": "草莓牛奶",
-              "unitPrice": 88,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_a686462d",
-              "serviceType": "春游日记",
-              "serviceKey": "春游日记",
-              "unitPrice": 35,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_62782daa",
-              "serviceType": "蛋挞",
-              "serviceKey": "蛋挞",
-              "unitPrice": 25,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_ff7d0907",
-              "serviceType": "蝶赴花期",
-              "serviceKey": "蝶赴花期",
-              "unitPrice": 10900,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_cfdf28a5",
-              "serviceType": "蝶栖芳缕",
-              "serviceKey": "蝶栖芳缕",
-              "unitPrice": 122,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_ec855e40",
-              "serviceType": "蝶吻清薇",
-              "serviceKey": "蝶吻清薇",
-              "unitPrice": 1314,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_b8212da2",
-              "serviceType": "芳丛引蝶",
-              "serviceKey": "芳丛引蝶",
-              "unitPrice": 520,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_eaf0700f",
-              "serviceType": "好运来财",
-              "serviceKey": "好运来财",
-              "unitPrice": 52,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
             },
             {
               "id": "price_item_126a53b4",
@@ -1962,436 +1624,7 @@
               "serviceKey": "哄睡",
               "unitPrice": 45,
               "settleType": "hour",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_47bd832d",
-              "serviceType": "红豆派",
-              "serviceKey": "红豆派",
-              "unitPrice": 28,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_b18a7d89",
-              "serviceType": "花烬蝶影",
-              "serviceKey": "花烬蝶影",
-              "unitPrice": 5200,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_7dc4ec02",
-              "serviceType": "花园信笺",
-              "serviceKey": "花园信笺",
-              "unitPrice": 299,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_4a4111e4",
-              "serviceType": "黄金鸡块",
-              "serviceKey": "黄金鸡块",
-              "unitPrice": 15,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_25b9f926",
-              "serviceType": "回忆杀马特",
-              "serviceKey": "回忆杀马特",
-              "unitPrice": 38,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_8c958fea",
-              "serviceType": "锦蝶缠芳",
-              "serviceKey": "锦蝶缠芳",
-              "unitPrice": 8800,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_95a74311",
-              "serviceType": "巨无霸汉堡",
-              "serviceKey": "巨无霸汉堡",
-              "unitPrice": 168,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_e599d180",
-              "serviceType": "可乐",
-              "serviceKey": "可乐",
-              "unitPrice": 10,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_6c74afd6",
-              "serviceType": "蓝莓蛋挞",
-              "serviceKey": "蓝莓蛋挞",
-              "unitPrice": 38,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_bf2a574a",
-              "serviceType": "浪漫星河",
-              "serviceKey": "浪漫星河",
-              "unitPrice": 2888,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_ceaa2485",
-              "serviceType": "栗司巧克力",
-              "serviceKey": "栗司巧克力",
-              "unitPrice": 99,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_d73508ca",
-              "serviceType": "零食果篮",
-              "serviceKey": "零食果篮",
-              "unitPrice": 168,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_7f5b5fac",
-              "serviceType": "莓果布蕾糕",
-              "serviceKey": "莓果布蕾糕",
-              "unitPrice": 520,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_d1b01543",
-              "serviceType": "梦幻城堡",
-              "serviceKey": "梦幻城堡",
-              "unitPrice": 3344,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_6f0f74c2",
-              "serviceType": "绵绵奶油熊",
-              "serviceKey": "绵绵奶油熊",
-              "unitPrice": 88,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_5cfca3d0",
-              "serviceType": "莫奈心锁",
-              "serviceKey": "莫奈心锁",
-              "unitPrice": 52,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_85397c38",
-              "serviceType": "暮晓时分",
-              "serviceKey": "暮晓时分",
-              "unitPrice": 5200,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_d615285a",
-              "serviceType": "凝蝶栖棠",
-              "serviceKey": "凝蝶栖棠",
-              "unitPrice": 6600,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_fc04e338",
-              "serviceType": "琼花舞蝶",
-              "serviceKey": "琼花舞蝶",
-              "unitPrice": 15200,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_dece30a6",
-              "serviceType": "软萌小猫",
-              "serviceKey": "软萌小猫",
-              "unitPrice": 328,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_24e8509f",
-              "serviceType": "三明治",
-              "serviceKey": "三明治",
-              "unitPrice": 15,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_6a903615",
-              "serviceType": "薯条",
-              "serviceKey": "薯条",
-              "unitPrice": 128,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_12674e95",
-              "serviceType": "逃跑菠萝饭",
-              "serviceKey": "逃跑菠萝饭",
-              "unitPrice": 288,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_e0857468",
-              "serviceType": "天使剪窗",
-              "serviceKey": "天使剪窗",
-              "unitPrice": 99,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_9b235840",
-              "serviceType": "望远镜",
-              "serviceKey": "望远镜",
-              "unitPrice": 52,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_bff977c8",
-              "serviceType": "我被控制了",
-              "serviceKey": "我被控制了",
-              "unitPrice": 188,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_070ceee9",
-              "serviceType": "我是声优",
-              "serviceKey": "我是声优",
-              "unitPrice": 88,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_d3c5e898",
-              "serviceType": "香脆热狗",
-              "serviceKey": "香脆热狗",
-              "unitPrice": 88,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_a104fe63",
-              "serviceType": "香辣鸡翅",
-              "serviceKey": "香辣鸡翅",
-              "unitPrice": 18,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_4fdb97f2",
-              "serviceType": "小熊棉花糖",
-              "serviceKey": "小熊棉花糖",
-              "unitPrice": 21,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_74996b0e",
-              "serviceType": "雪糕",
-              "serviceKey": "雪糕",
-              "unitPrice": 38,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_bae4ef25",
-              "serviceType": "雪国风情",
-              "serviceKey": "雪国风情",
-              "unitPrice": 1314,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_be0da7b3",
-              "serviceType": "洋葱圈",
-              "serviceKey": "洋葱圈",
-              "unitPrice": 20,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_9fdbb491",
-              "serviceType": "一起看",
-              "serviceKey": "一起看",
-              "unitPrice": 35,
-              "settleType": "hour",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_2d41444f",
-              "serviceType": "雨落汐生",
-              "serviceKey": "雨落汐生",
-              "unitPrice": 520,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_0474a73f",
-              "serviceType": "云之白泽",
-              "serviceKey": "云之白泽",
-              "unitPrice": 999,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_9c6876ca",
-              "serviceType": "芝士帕尼尼",
-              "serviceKey": "芝士帕尼尼",
-              "unitPrice": 52,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_e9808021",
-              "serviceType": "指南针",
-              "serviceKey": "指南针",
-              "unitPrice": 128,
-              "settleType": "gift",
-              "usageCount": 1,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750,
-              "lastUsed": 1784111791750
-            },
-            {
-              "id": "price_item_6e5bcc93",
-              "serviceType": "逐蝶寻光",
-              "serviceKey": "逐蝶寻光",
-              "unitPrice": 3344,
-              "settleType": "gift",
-              "usageCount": 1,
+              "usageCount": 3,
               "createdAt": 1784111791750,
               "updatedAt": 1784111791750,
               "lastUsed": 1784111791750
@@ -2664,124 +1897,33 @@
               "updatedAt": 1784111791754
             },
             {
-              "id": "price_rule_6a7d6403",
+              "id": "price_rule_083e13a2",
               "kind": "exact",
-              "serviceName": "零食店全套礼物单",
-              "serviceKey": "零食店全套礼物单",
+              "serviceName": "鹅鸭杀",
+              "serviceKey": "鹅鸭杀",
               "alias": "",
               "prices": {
-                "gift": 1234
-              },
-              "legacyManaged": true,
-              "createdAt": 1784158895019,
-              "updatedAt": 1784158895019
-            },
-            {
-              "id": "price_rule_f0d93704",
-              "kind": "exact",
-              "serviceName": "花园全套礼物单",
-              "serviceKey": "花园全套礼物单",
-              "alias": "",
-              "prices": {
-                "gift": 1466
-              },
-              "legacyManaged": true,
-              "createdAt": 1784158737957,
-              "updatedAt": 1784158737957
-            },
-            {
-              "id": "price_rule_e2d004df",
-              "kind": "exact",
-              "serviceName": "睡莲私语",
-              "serviceKey": "睡莲私语",
-              "alias": "",
-              "prices": {
-                "gift": 520
+                "hour": 35
               },
               "legacyManaged": true,
               "createdAt": 1784111791750,
-              "updatedAt": 1784158660136
+              "updatedAt": 1785653039408
             },
             {
-              "id": "price_rule_8b89bc94",
+              "id": "price_rule_8e6d134d",
               "kind": "exact",
-              "serviceName": "KFC疯狂星期四全套礼物单",
-              "serviceKey": "kfc疯狂星期四全套礼物单",
+              "serviceName": "一起看",
+              "serviceKey": "一起看",
               "alias": "",
               "prices": {
-                "gift": 602
+                "hour": 35
               },
               "legacyManaged": true,
-              "createdAt": 1784158584018,
-              "updatedAt": 1784158584018
+              "createdAt": 1784111791750,
+              "updatedAt": 1784644581120
             },
             {
-              "id": "price_rule_e3979eb1",
-              "kind": "exact",
-              "serviceName": "神之一脚",
-              "serviceKey": "神之一脚",
-              "alias": "",
-              "prices": {
-                "gift": 520
-              },
-              "legacyManaged": true,
-              "createdAt": 1784158305167,
-              "updatedAt": 1784158305167
-            },
-            {
-              "id": "price_rule_68da637e",
-              "kind": "exact",
-              "serviceName": "变音药水",
-              "serviceKey": "变音药水",
-              "alias": "",
-              "prices": {
-                "gift": 288
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784158245850
-            },
-            {
-              "id": "price_rule_a25ff023",
-              "kind": "exact",
-              "serviceName": "环球全套礼物单",
-              "serviceKey": "环球全套礼物单",
-              "alias": "",
-              "prices": {
-                "gift": 520
-              },
-              "legacyManaged": true,
-              "createdAt": 1784158171678,
-              "updatedAt": 1784158171678
-            },
-            {
-              "id": "price_rule_a8b2b48b",
-              "kind": "exact",
-              "serviceName": "🍬",
-              "serviceKey": "🍬",
-              "alias": "",
-              "prices": {
-                "gift": 5
-              },
-              "legacyManaged": true,
-              "createdAt": 1784157992898,
-              "updatedAt": 1784157992898
-            },
-            {
-              "id": "price_rule_a3bd0a9c",
-              "kind": "exact",
-              "serviceName": "月星",
-              "serviceKey": "月星",
-              "alias": "",
-              "prices": {
-                "gift": 172
-              },
-              "legacyManaged": true,
-              "createdAt": 1784157930451,
-              "updatedAt": 1784157930451
-            },
-            {
-              "id": "price_rule_235ebac4",
+              "id": "price_rule_1e5eb2e5",
               "kind": "exact",
               "serviceName": "端游",
               "serviceKey": "端游",
@@ -2794,7 +1936,7 @@
               "updatedAt": 1784157903056
             },
             {
-              "id": "price_rule_9142e90b",
+              "id": "price_rule_011e0273",
               "kind": "exact",
               "serviceName": "纯文",
               "serviceKey": "纯文",
@@ -2807,7 +1949,7 @@
               "updatedAt": 1784157820241
             },
             {
-              "id": "price_rule_a3c51def",
+              "id": "price_rule_39f096cb",
               "kind": "exact",
               "serviceName": "树洞",
               "serviceKey": "树洞",
@@ -2820,7 +1962,7 @@
               "updatedAt": 1784157800252
             },
             {
-              "id": "price_rule_501e2602",
+              "id": "price_rule_139184b8",
               "kind": "exact",
               "serviceName": "其他手游",
               "serviceKey": "其他手游",
@@ -2833,7 +1975,7 @@
               "updatedAt": 1784157775522
             },
             {
-              "id": "price_rule_df9e5d6b",
+              "id": "price_rule_84e6f41b",
               "kind": "exact",
               "serviceName": "纯连",
               "serviceKey": "纯连",
@@ -2846,7 +1988,7 @@
               "updatedAt": 1784157747891
             },
             {
-              "id": "price_rule_3dc3c478",
+              "id": "price_rule_f4d7d176",
               "kind": "exact",
               "serviceName": "蹭金标",
               "serviceKey": "蹭金标",
@@ -2859,7 +2001,7 @@
               "updatedAt": 1784157708296
             },
             {
-              "id": "price_rule_f02193ac",
+              "id": "price_rule_df5e0ae6",
               "kind": "exact",
               "serviceName": "教学单",
               "serviceKey": "教学单",
@@ -2872,7 +2014,7 @@
               "updatedAt": 1784157652793
             },
             {
-              "id": "price_rule_b3d9e606",
+              "id": "price_rule_27afd0fc",
               "kind": "exact",
               "serviceName": "甜蜜单",
               "serviceKey": "甜蜜单",
@@ -2885,7 +2027,7 @@
               "updatedAt": 1784157639698
             },
             {
-              "id": "price_rule_65316c3d",
+              "id": "price_rule_5e316138",
               "kind": "exact",
               "serviceName": "技术娱乐",
               "serviceKey": "技术娱乐",
@@ -2898,7 +2040,7 @@
               "updatedAt": 1784157600680
             },
             {
-              "id": "price_rule_6d171ea0",
+              "id": "price_rule_76172ccb",
               "kind": "exact",
               "serviceName": "技术匹配",
               "serviceKey": "技术匹配",
@@ -2911,20 +2053,7 @@
               "updatedAt": 1784157583256
             },
             {
-              "id": "price_rule_98bb21e4",
-              "kind": "exact",
-              "serviceName": "鹅鸭杀",
-              "serviceKey": "鹅鸭杀",
-              "alias": "",
-              "prices": {
-                "hour": 35
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784128949864
-            },
-            {
-              "id": "price_rule_ab30b3a6",
+              "id": "price_rule_c32e9ad7",
               "kind": "exact",
               "serviceName": "娱乐匹配",
               "serviceKey": "娱乐匹配",
@@ -2937,7 +2066,7 @@
               "updatedAt": 1784112051436
             },
             {
-              "id": "price_rule_f3e33fe4",
+              "id": "price_rule_e5dc6e15",
               "kind": "exact",
               "serviceName": "娱技匹配",
               "serviceKey": "娱技匹配",
@@ -2950,7 +2079,7 @@
               "updatedAt": 1784112031333
             },
             {
-              "id": "price_rule_c51c2860",
+              "id": "price_rule_5d194611",
               "kind": "exact",
               "serviceName": "小国蹭标",
               "serviceKey": "小国蹭标",
@@ -2963,7 +2092,7 @@
               "updatedAt": 1784111934405
             },
             {
-              "id": "price_rule_3f51d76b",
+              "id": "price_rule_354f8916",
               "kind": "exact",
               "serviceName": "大国蹭标",
               "serviceKey": "大国蹭标",
@@ -2976,384 +2105,7 @@
               "updatedAt": 1784111861657
             },
             {
-              "id": "price_rule_24f4f11b",
-              "kind": "exact",
-              "serviceName": "爱的卡牌",
-              "serviceKey": "爱的卡牌",
-              "alias": "",
-              "prices": {
-                "gift": 288
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_45d7017b",
-              "kind": "exact",
-              "serviceName": "冰岛",
-              "serviceKey": "冰岛",
-              "alias": "",
-              "prices": {
-                "gift": 104
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_5d3fd2a3",
-              "kind": "exact",
-              "serviceName": "宠物项圈",
-              "serviceKey": "宠物项圈",
-              "alias": "",
-              "prices": {
-                "gift": 365
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_95928cc5",
-              "kind": "exact",
-              "serviceName": "绿色心情",
-              "serviceKey": "绿色心情",
-              "alias": "",
-              "prices": {
-                "gift": 222
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_9f0c5d2a",
-              "kind": "exact",
-              "serviceName": "满天星",
-              "serviceKey": "满天星",
-              "alias": "",
-              "prices": {
-                "gift": 10
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_d3cd3653",
-              "kind": "exact",
-              "serviceName": "美国",
-              "serviceKey": "美国",
-              "alias": "",
-              "prices": {
-                "gift": 104
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_b48548ed",
-              "kind": "exact",
-              "serviceName": "奶油蛋糕",
-              "serviceKey": "奶油蛋糕",
-              "alias": "",
-              "prices": {
-                "gift": 128
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_ce73e2f2",
-              "kind": "exact",
-              "serviceName": "日本",
-              "serviceKey": "日本",
-              "alias": "",
-              "prices": {
-                "gift": 104
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_468eab91",
-              "kind": "exact",
-              "serviceName": "瑞士",
-              "serviceKey": "瑞士",
-              "alias": "",
-              "prices": {
-                "gift": 104
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_f0a3c42a",
-              "kind": "exact",
-              "serviceName": "少女发带",
-              "serviceKey": "少女发带",
-              "alias": "",
-              "prices": {
-                "gift": 15
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_878898cf",
-              "kind": "exact",
-              "serviceName": "天使之翼",
-              "serviceKey": "天使之翼",
-              "alias": "",
-              "prices": {
-                "gift": 88
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_1260d97d",
-              "kind": "exact",
-              "serviceName": "甜心便签",
-              "serviceKey": "甜心便签",
-              "alias": "",
-              "prices": {
-                "gift": 188
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_4140874e",
-              "kind": "exact",
-              "serviceName": "同心结",
-              "serviceKey": "同心结",
-              "alias": "",
-              "prices": {
-                "gift": 5
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_2604ac49",
-              "kind": "exact",
-              "serviceName": "雪花恋歌",
-              "serviceKey": "雪花恋歌",
-              "alias": "",
-              "prices": {
-                "gift": 35
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_c41a8002",
-              "kind": "exact",
-              "serviceName": "一束花开",
-              "serviceKey": "一束花开",
-              "alias": "",
-              "prices": {
-                "gift": 52
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_01242ef7",
-              "kind": "exact",
-              "serviceName": "英国",
-              "serviceKey": "英国",
-              "alias": "",
-              "prices": {
-                "gift": 104
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791751,
-              "updatedAt": 1784111791751
-            },
-            {
-              "id": "price_rule_b369d5fa",
-              "kind": "exact",
-              "serviceName": "爱吃小零食",
-              "serviceKey": "爱吃小零食",
-              "alias": "",
-              "prices": {
-                "gift": 128
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_ade61fda",
-              "kind": "exact",
-              "serviceName": "薄荷糖果",
-              "serviceKey": "薄荷糖果",
-              "alias": "",
-              "prices": {
-                "gift": 168
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_ffb778aa",
-              "kind": "exact",
-              "serviceName": "冰芙果酱",
-              "serviceKey": "冰芙果酱",
-              "alias": "",
-              "prices": {
-                "gift": 128
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_e6f05aa7",
-              "kind": "exact",
-              "serviceName": "冰淇淋",
-              "serviceKey": "冰淇淋",
-              "alias": "",
-              "prices": {
-                "gift": 12
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_15ef386e",
-              "kind": "exact",
-              "serviceName": "啵啵奶茶",
-              "serviceKey": "啵啵奶茶",
-              "alias": "",
-              "prices": {
-                "gift": 52
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_f6cbf7d0",
-              "kind": "exact",
-              "serviceName": "草莓牛奶",
-              "serviceKey": "草莓牛奶",
-              "alias": "",
-              "prices": {
-                "gift": 88
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_6e036942",
-              "kind": "exact",
-              "serviceName": "春游日记",
-              "serviceKey": "春游日记",
-              "alias": "",
-              "prices": {
-                "gift": 35
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_e3d14b06",
-              "kind": "exact",
-              "serviceName": "蛋挞",
-              "serviceKey": "蛋挞",
-              "alias": "",
-              "prices": {
-                "gift": 25
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_88d8f27a",
-              "kind": "exact",
-              "serviceName": "蝶赴花期",
-              "serviceKey": "蝶赴花期",
-              "alias": "",
-              "prices": {
-                "gift": 10900
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_17385d13",
-              "kind": "exact",
-              "serviceName": "蝶栖芳缕",
-              "serviceKey": "蝶栖芳缕",
-              "alias": "",
-              "prices": {
-                "gift": 122
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_14214c58",
-              "kind": "exact",
-              "serviceName": "蝶吻清薇",
-              "serviceKey": "蝶吻清薇",
-              "alias": "",
-              "prices": {
-                "gift": 1314
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_038718b9",
-              "kind": "exact",
-              "serviceName": "芳丛引蝶",
-              "serviceKey": "芳丛引蝶",
-              "alias": "",
-              "prices": {
-                "gift": 520
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_43b7522d",
-              "kind": "exact",
-              "serviceName": "好运来财",
-              "serviceKey": "好运来财",
-              "alias": "",
-              "prices": {
-                "gift": 52
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_ff150c51",
+              "id": "price_rule_f21f8536",
               "kind": "exact",
               "serviceName": "哄睡",
               "serviceKey": "哄睡",
@@ -3364,598 +2116,925 @@
               "legacyManaged": true,
               "createdAt": 1784111791750,
               "updatedAt": 1784111791750
+            }
+          ],
+          "surcharges": [
+            {
+              "id": "surcharge_rule_eca82dce",
+              "name": "教学单",
+              "keywords": [
+                "教学"
+              ],
+              "prices": {
+                "round": 6
+              },
+              "enabled": true,
+              "createdAt": 1785654687053,
+              "updatedAt": 1785654687053
             },
             {
-              "id": "price_rule_5f95a86f",
-              "kind": "exact",
-              "serviceName": "红豆派",
+              "id": "surcharge_rule_f40f91fd",
+              "name": "甜蜜单",
+              "keywords": [
+                "甜蜜"
+              ],
+              "prices": {
+                "round": 5
+              },
+              "enabled": true,
+              "createdAt": 1785202745838,
+              "updatedAt": 1785202745838
+            },
+            {
+              "id": "surcharge_rule_40358f1e",
+              "name": "甜蜜单",
+              "keywords": [
+                "甜蜜"
+              ],
+              "prices": {
+                "round": 5
+              },
+              "enabled": true,
+              "createdAt": 1784767206044,
+              "updatedAt": 1784767206044
+            }
+          ],
+          "giftMemories": [
+            {
+              "id": "gift_memory_legacy_price_item_c0548baf",
+              "serviceType": "🍬",
+              "serviceKey": "🍬",
+              "mode": "fixed",
+              "unitPrice": 5,
+              "usageCount": 9,
+              "createdAt": 1784157992898,
+              "updatedAt": 1784750098336,
+              "lastUsed": 1784750098336
+            },
+            {
+              "id": "gift_memory_legacy_price_item_842ea3c4",
+              "serviceType": "零食店全套礼物单",
+              "serviceKey": "零食店全套礼物单",
+              "mode": "fixed",
+              "unitPrice": 1234,
+              "usageCount": 3,
+              "createdAt": 1784158895019,
+              "updatedAt": 1784158895019,
+              "lastUsed": 1784158895019
+            },
+            {
+              "id": "gift_memory_legacy_price_item_48bf5b42",
+              "serviceType": "花园全套礼物单",
+              "serviceKey": "花园全套礼物单",
+              "mode": "fixed",
+              "unitPrice": 1466,
+              "usageCount": 3,
+              "createdAt": 1784158737957,
+              "updatedAt": 1784158737957,
+              "lastUsed": 1784158737957
+            },
+            {
+              "id": "gift_memory_legacy_price_item_cfa2abb2",
+              "serviceType": "睡莲私语",
+              "serviceKey": "睡莲私语",
+              "mode": "fixed",
+              "unitPrice": 520,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784158660136,
+              "lastUsed": 1784158660136
+            },
+            {
+              "id": "gift_memory_legacy_price_item_70dc6b3c",
+              "serviceType": "KFC疯狂星期四全套礼物单",
+              "serviceKey": "kfc疯狂星期四全套礼物单",
+              "mode": "fixed",
+              "unitPrice": 602,
+              "usageCount": 3,
+              "createdAt": 1784158584018,
+              "updatedAt": 1784158584018,
+              "lastUsed": 1784158584018
+            },
+            {
+              "id": "gift_memory_legacy_price_item_97f41776",
+              "serviceType": "神之一脚",
+              "serviceKey": "神之一脚",
+              "mode": "fixed",
+              "unitPrice": 520,
+              "usageCount": 3,
+              "createdAt": 1784158305167,
+              "updatedAt": 1784158305167,
+              "lastUsed": 1784158305167
+            },
+            {
+              "id": "gift_memory_legacy_price_item_5f0087f4",
+              "serviceType": "变音药水",
+              "serviceKey": "变音药水",
+              "mode": "fixed",
+              "unitPrice": 288,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784158245850,
+              "lastUsed": 1784158245850
+            },
+            {
+              "id": "gift_memory_legacy_price_item_c0a5c4d4",
+              "serviceType": "环球全套礼物单",
+              "serviceKey": "环球全套礼物单",
+              "mode": "fixed",
+              "unitPrice": 520,
+              "usageCount": 3,
+              "createdAt": 1784158171678,
+              "updatedAt": 1784158171678,
+              "lastUsed": 1784158171678
+            },
+            {
+              "id": "gift_memory_legacy_price_item_e6c87a67",
+              "serviceType": "月星",
+              "serviceKey": "月星",
+              "mode": "fixed",
+              "unitPrice": 172,
+              "usageCount": 3,
+              "createdAt": 1784157930451,
+              "updatedAt": 1784157930451,
+              "lastUsed": 1784157930451
+            },
+            {
+              "id": "gift_memory_legacy_price_item_d2edcdba",
+              "serviceType": "爱的卡牌",
+              "serviceKey": "爱的卡牌",
+              "mode": "fixed",
+              "unitPrice": 288,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_5bbe751d",
+              "serviceType": "冰岛",
+              "serviceKey": "冰岛",
+              "mode": "fixed",
+              "unitPrice": 104,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_ca451fc0",
+              "serviceType": "宠物项圈",
+              "serviceKey": "宠物项圈",
+              "mode": "fixed",
+              "unitPrice": 365,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_2c3fd099",
+              "serviceType": "绿色心情",
+              "serviceKey": "绿色心情",
+              "mode": "fixed",
+              "unitPrice": 222,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_570f5bc9",
+              "serviceType": "满天星",
+              "serviceKey": "满天星",
+              "mode": "fixed",
+              "unitPrice": 10,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_bc77b925",
+              "serviceType": "美国",
+              "serviceKey": "美国",
+              "mode": "fixed",
+              "unitPrice": 104,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_190baffd",
+              "serviceType": "奶油蛋糕",
+              "serviceKey": "奶油蛋糕",
+              "mode": "fixed",
+              "unitPrice": 128,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_6cb5e845",
+              "serviceType": "日本",
+              "serviceKey": "日本",
+              "mode": "fixed",
+              "unitPrice": 104,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_2577ca7f",
+              "serviceType": "瑞士",
+              "serviceKey": "瑞士",
+              "mode": "fixed",
+              "unitPrice": 104,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_48f6aa27",
+              "serviceType": "少女发带",
+              "serviceKey": "少女发带",
+              "mode": "fixed",
+              "unitPrice": 15,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_1e85c347",
+              "serviceType": "天使之翼",
+              "serviceKey": "天使之翼",
+              "mode": "fixed",
+              "unitPrice": 88,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_9d385fce",
+              "serviceType": "甜心便签",
+              "serviceKey": "甜心便签",
+              "mode": "fixed",
+              "unitPrice": 188,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_8aa25b8e",
+              "serviceType": "同心结",
+              "serviceKey": "同心结",
+              "mode": "fixed",
+              "unitPrice": 5,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_bb0bb298",
+              "serviceType": "雪花恋歌",
+              "serviceKey": "雪花恋歌",
+              "mode": "fixed",
+              "unitPrice": 35,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_e349a936",
+              "serviceType": "一束花开",
+              "serviceKey": "一束花开",
+              "mode": "fixed",
+              "unitPrice": 52,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_a5058988",
+              "serviceType": "英国",
+              "serviceKey": "英国",
+              "mode": "fixed",
+              "unitPrice": 104,
+              "usageCount": 3,
+              "createdAt": 1784111791751,
+              "updatedAt": 1784111791751,
+              "lastUsed": 1784111791751
+            },
+            {
+              "id": "gift_memory_legacy_price_item_93f7bac5",
+              "serviceType": "爱吃小零食",
+              "serviceKey": "爱吃小零食",
+              "mode": "fixed",
+              "unitPrice": 128,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_66c60c64",
+              "serviceType": "薄荷糖果",
+              "serviceKey": "薄荷糖果",
+              "mode": "fixed",
+              "unitPrice": 168,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_9229a381",
+              "serviceType": "冰芙果酱",
+              "serviceKey": "冰芙果酱",
+              "mode": "fixed",
+              "unitPrice": 128,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_8ee80c59",
+              "serviceType": "冰淇淋",
+              "serviceKey": "冰淇淋",
+              "mode": "fixed",
+              "unitPrice": 12,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_24216587",
+              "serviceType": "啵啵奶茶",
+              "serviceKey": "啵啵奶茶",
+              "mode": "fixed",
+              "unitPrice": 52,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_77e7f6a2",
+              "serviceType": "草莓牛奶",
+              "serviceKey": "草莓牛奶",
+              "mode": "fixed",
+              "unitPrice": 88,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_a686462d",
+              "serviceType": "春游日记",
+              "serviceKey": "春游日记",
+              "mode": "fixed",
+              "unitPrice": 35,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_62782daa",
+              "serviceType": "蛋挞",
+              "serviceKey": "蛋挞",
+              "mode": "fixed",
+              "unitPrice": 25,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_ff7d0907",
+              "serviceType": "蝶赴花期",
+              "serviceKey": "蝶赴花期",
+              "mode": "fixed",
+              "unitPrice": 10900,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_cfdf28a5",
+              "serviceType": "蝶栖芳缕",
+              "serviceKey": "蝶栖芳缕",
+              "mode": "fixed",
+              "unitPrice": 122,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_ec855e40",
+              "serviceType": "蝶吻清薇",
+              "serviceKey": "蝶吻清薇",
+              "mode": "fixed",
+              "unitPrice": 1314,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_b8212da2",
+              "serviceType": "芳丛引蝶",
+              "serviceKey": "芳丛引蝶",
+              "mode": "fixed",
+              "unitPrice": 520,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_eaf0700f",
+              "serviceType": "好运来财",
+              "serviceKey": "好运来财",
+              "mode": "fixed",
+              "unitPrice": 52,
+              "usageCount": 3,
+              "createdAt": 1784111791750,
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_47bd832d",
+              "serviceType": "红豆派",
               "serviceKey": "红豆派",
-              "alias": "",
-              "prices": {
-                "gift": 28
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 28,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_f8039702",
-              "kind": "exact",
-              "serviceName": "花烬蝶影",
+              "id": "gift_memory_legacy_price_item_b18a7d89",
+              "serviceType": "花烬蝶影",
               "serviceKey": "花烬蝶影",
-              "alias": "",
-              "prices": {
-                "gift": 5200
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 5200,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_62d7d2d0",
-              "kind": "exact",
-              "serviceName": "花园信笺",
+              "id": "gift_memory_legacy_price_item_7dc4ec02",
+              "serviceType": "花园信笺",
               "serviceKey": "花园信笺",
-              "alias": "",
-              "prices": {
-                "gift": 299
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 299,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_1b90d7b5",
-              "kind": "exact",
-              "serviceName": "黄金鸡块",
+              "id": "gift_memory_legacy_price_item_4a4111e4",
+              "serviceType": "黄金鸡块",
               "serviceKey": "黄金鸡块",
-              "alias": "",
-              "prices": {
-                "gift": 15
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 15,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_5e5fecbc",
-              "kind": "exact",
-              "serviceName": "回忆杀马特",
+              "id": "gift_memory_legacy_price_item_25b9f926",
+              "serviceType": "回忆杀马特",
               "serviceKey": "回忆杀马特",
-              "alias": "",
-              "prices": {
-                "gift": 38
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 38,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_e02589b9",
-              "kind": "exact",
-              "serviceName": "锦蝶缠芳",
+              "id": "gift_memory_legacy_price_item_8c958fea",
+              "serviceType": "锦蝶缠芳",
               "serviceKey": "锦蝶缠芳",
-              "alias": "",
-              "prices": {
-                "gift": 8800
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 8800,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_4174a924",
-              "kind": "exact",
-              "serviceName": "巨无霸汉堡",
+              "id": "gift_memory_legacy_price_item_95a74311",
+              "serviceType": "巨无霸汉堡",
               "serviceKey": "巨无霸汉堡",
-              "alias": "",
-              "prices": {
-                "gift": 168
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 168,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_e636c710",
-              "kind": "exact",
-              "serviceName": "可乐",
+              "id": "gift_memory_legacy_price_item_e599d180",
+              "serviceType": "可乐",
               "serviceKey": "可乐",
-              "alias": "",
-              "prices": {
-                "gift": 10
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 10,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_51947d43",
-              "kind": "exact",
-              "serviceName": "蓝莓蛋挞",
+              "id": "gift_memory_legacy_price_item_6c74afd6",
+              "serviceType": "蓝莓蛋挞",
               "serviceKey": "蓝莓蛋挞",
-              "alias": "",
-              "prices": {
-                "gift": 38
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 38,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_259b4d08",
-              "kind": "exact",
-              "serviceName": "浪漫星河",
+              "id": "gift_memory_legacy_price_item_bf2a574a",
+              "serviceType": "浪漫星河",
               "serviceKey": "浪漫星河",
-              "alias": "",
-              "prices": {
-                "gift": 2888
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 2888,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_06d4db78",
-              "kind": "exact",
-              "serviceName": "栗司巧克力",
+              "id": "gift_memory_legacy_price_item_ceaa2485",
+              "serviceType": "栗司巧克力",
               "serviceKey": "栗司巧克力",
-              "alias": "",
-              "prices": {
-                "gift": 99
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 99,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_a3abcb7e",
-              "kind": "exact",
-              "serviceName": "零食果篮",
+              "id": "gift_memory_legacy_price_item_d73508ca",
+              "serviceType": "零食果篮",
               "serviceKey": "零食果篮",
-              "alias": "",
-              "prices": {
-                "gift": 168
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 168,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_e244009f",
-              "kind": "exact",
-              "serviceName": "莓果布蕾糕",
+              "id": "gift_memory_legacy_price_item_7f5b5fac",
+              "serviceType": "莓果布蕾糕",
               "serviceKey": "莓果布蕾糕",
-              "alias": "",
-              "prices": {
-                "gift": 520
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 520,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_b90b274d",
-              "kind": "exact",
-              "serviceName": "梦幻城堡",
+              "id": "gift_memory_legacy_price_item_d1b01543",
+              "serviceType": "梦幻城堡",
               "serviceKey": "梦幻城堡",
-              "alias": "",
-              "prices": {
-                "gift": 3344
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 3344,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_ede6c4f7",
-              "kind": "exact",
-              "serviceName": "绵绵奶油熊",
+              "id": "gift_memory_legacy_price_item_6f0f74c2",
+              "serviceType": "绵绵奶油熊",
               "serviceKey": "绵绵奶油熊",
-              "alias": "",
-              "prices": {
-                "gift": 88
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 88,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_05628c94",
-              "kind": "exact",
-              "serviceName": "莫奈心锁",
+              "id": "gift_memory_legacy_price_item_5cfca3d0",
+              "serviceType": "莫奈心锁",
               "serviceKey": "莫奈心锁",
-              "alias": "",
-              "prices": {
-                "gift": 52
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 52,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_7bce491e",
-              "kind": "exact",
-              "serviceName": "暮晓时分",
+              "id": "gift_memory_legacy_price_item_85397c38",
+              "serviceType": "暮晓时分",
               "serviceKey": "暮晓时分",
-              "alias": "",
-              "prices": {
-                "gift": 5200
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 5200,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_09d3edc7",
-              "kind": "exact",
-              "serviceName": "凝蝶栖棠",
+              "id": "gift_memory_legacy_price_item_d615285a",
+              "serviceType": "凝蝶栖棠",
               "serviceKey": "凝蝶栖棠",
-              "alias": "",
-              "prices": {
-                "gift": 6600
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 6600,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_9dc6ea1c",
-              "kind": "exact",
-              "serviceName": "琼花舞蝶",
+              "id": "gift_memory_legacy_price_item_fc04e338",
+              "serviceType": "琼花舞蝶",
               "serviceKey": "琼花舞蝶",
-              "alias": "",
-              "prices": {
-                "gift": 15200
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 15200,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_d673413d",
-              "kind": "exact",
-              "serviceName": "软萌小猫",
+              "id": "gift_memory_legacy_price_item_dece30a6",
+              "serviceType": "软萌小猫",
               "serviceKey": "软萌小猫",
-              "alias": "",
-              "prices": {
-                "gift": 328
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 328,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_16d2cc33",
-              "kind": "exact",
-              "serviceName": "三明治",
+              "id": "gift_memory_legacy_price_item_24e8509f",
+              "serviceType": "三明治",
               "serviceKey": "三明治",
-              "alias": "",
-              "prices": {
-                "gift": 15
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 15,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_f4c5a368",
-              "kind": "exact",
-              "serviceName": "薯条",
+              "id": "gift_memory_legacy_price_item_6a903615",
+              "serviceType": "薯条",
               "serviceKey": "薯条",
-              "alias": "",
-              "prices": {
-                "gift": 128
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 128,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_8c7402d3",
-              "kind": "exact",
-              "serviceName": "逃跑菠萝饭",
+              "id": "gift_memory_legacy_price_item_12674e95",
+              "serviceType": "逃跑菠萝饭",
               "serviceKey": "逃跑菠萝饭",
-              "alias": "",
-              "prices": {
-                "gift": 288
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 288,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_d5009e23",
-              "kind": "exact",
-              "serviceName": "天使剪窗",
+              "id": "gift_memory_legacy_price_item_e0857468",
+              "serviceType": "天使剪窗",
               "serviceKey": "天使剪窗",
-              "alias": "",
-              "prices": {
-                "gift": 99
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 99,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_bd504d18",
-              "kind": "exact",
-              "serviceName": "望远镜",
+              "id": "gift_memory_legacy_price_item_9b235840",
+              "serviceType": "望远镜",
               "serviceKey": "望远镜",
-              "alias": "",
-              "prices": {
-                "gift": 52
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 52,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_4f3d03e7",
-              "kind": "exact",
-              "serviceName": "我被控制了",
+              "id": "gift_memory_legacy_price_item_bff977c8",
+              "serviceType": "我被控制了",
               "serviceKey": "我被控制了",
-              "alias": "",
-              "prices": {
-                "gift": 188
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 188,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_561da808",
-              "kind": "exact",
-              "serviceName": "我是声优",
+              "id": "gift_memory_legacy_price_item_070ceee9",
+              "serviceType": "我是声优",
               "serviceKey": "我是声优",
-              "alias": "",
-              "prices": {
-                "gift": 88
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 88,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_c97f03ae",
-              "kind": "exact",
-              "serviceName": "香脆热狗",
+              "id": "gift_memory_legacy_price_item_d3c5e898",
+              "serviceType": "香脆热狗",
               "serviceKey": "香脆热狗",
-              "alias": "",
-              "prices": {
-                "gift": 88
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 88,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_ed0f7810",
-              "kind": "exact",
-              "serviceName": "香辣鸡翅",
+              "id": "gift_memory_legacy_price_item_a104fe63",
+              "serviceType": "香辣鸡翅",
               "serviceKey": "香辣鸡翅",
-              "alias": "",
-              "prices": {
-                "gift": 18
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 18,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_0205d188",
-              "kind": "exact",
-              "serviceName": "小熊棉花糖",
+              "id": "gift_memory_legacy_price_item_4fdb97f2",
+              "serviceType": "小熊棉花糖",
               "serviceKey": "小熊棉花糖",
-              "alias": "",
-              "prices": {
-                "gift": 21
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 21,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_b95bc59b",
-              "kind": "exact",
-              "serviceName": "雪糕",
+              "id": "gift_memory_legacy_price_item_74996b0e",
+              "serviceType": "雪糕",
               "serviceKey": "雪糕",
-              "alias": "",
-              "prices": {
-                "gift": 38
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 38,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_c8d074c3",
-              "kind": "exact",
-              "serviceName": "雪国风情",
+              "id": "gift_memory_legacy_price_item_bae4ef25",
+              "serviceType": "雪国风情",
               "serviceKey": "雪国风情",
-              "alias": "",
-              "prices": {
-                "gift": 1314
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 1314,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_f49b65fe",
-              "kind": "exact",
-              "serviceName": "洋葱圈",
+              "id": "gift_memory_legacy_price_item_be0da7b3",
+              "serviceType": "洋葱圈",
               "serviceKey": "洋葱圈",
-              "alias": "",
-              "prices": {
-                "gift": 20
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 20,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_1f9f000f",
-              "kind": "exact",
-              "serviceName": "一起看",
-              "serviceKey": "一起看",
-              "alias": "",
-              "prices": {
-                "hour": 35
-              },
-              "legacyManaged": true,
-              "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
-            },
-            {
-              "id": "price_rule_6d1978da",
-              "kind": "exact",
-              "serviceName": "雨落汐生",
+              "id": "gift_memory_legacy_price_item_2d41444f",
+              "serviceType": "雨落汐生",
               "serviceKey": "雨落汐生",
-              "alias": "",
-              "prices": {
-                "gift": 520
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 520,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_7961ff6d",
-              "kind": "exact",
-              "serviceName": "云之白泽",
+              "id": "gift_memory_legacy_price_item_0474a73f",
+              "serviceType": "云之白泽",
               "serviceKey": "云之白泽",
-              "alias": "",
-              "prices": {
-                "gift": 999
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 999,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_18e0b460",
-              "kind": "exact",
-              "serviceName": "芝士帕尼尼",
+              "id": "gift_memory_legacy_price_item_9c6876ca",
+              "serviceType": "芝士帕尼尼",
               "serviceKey": "芝士帕尼尼",
-              "alias": "",
-              "prices": {
-                "gift": 52
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 52,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_d488650c",
-              "kind": "exact",
-              "serviceName": "指南针",
+              "id": "gift_memory_legacy_price_item_e9808021",
+              "serviceType": "指南针",
               "serviceKey": "指南针",
-              "alias": "",
-              "prices": {
-                "gift": 128
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 128,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
             },
             {
-              "id": "price_rule_772bfd41",
-              "kind": "exact",
-              "serviceName": "逐蝶寻光",
+              "id": "gift_memory_legacy_price_item_6e5bcc93",
+              "serviceType": "逐蝶寻光",
               "serviceKey": "逐蝶寻光",
-              "alias": "",
-              "prices": {
-                "gift": 3344
-              },
-              "legacyManaged": true,
+              "mode": "fixed",
+              "unitPrice": 3344,
+              "usageCount": 3,
               "createdAt": 1784111791750,
-              "updatedAt": 1784111791750
+              "updatedAt": 1784111791750,
+              "lastUsed": 1784111791750
+            },
+            {
+              "id": "gift_memory_legacy_price_item_0c5ee040",
+              "serviceType": "礼物",
+              "serviceKey": "礼物",
+              "mode": "variable",
+              "unitPrice": null,
+              "usageCount": 2,
+              "createdAt": 1784313286133,
+              "updatedAt": 1784767240801,
+              "lastUsed": 1784767240801
             }
           ]
         }
       ],
-      "createdAt": 1784106694032,
-      "updatedAt": 1784158960934
+      "createdAt": 1785844260811,
+      "updatedAt": 1785845800465
     },
     "priceMemory": [
       {
-        "unitPrice": 1234,
-        "settleType": "gift",
-        "serviceType": "零食店全套礼物单",
-        "usageCount": 1,
-        "lastUsed": 1784158895019,
-        "createdAt": 1784158895019
-      },
-      {
-        "unitPrice": 1466,
-        "settleType": "gift",
-        "serviceType": "花园全套礼物单",
-        "usageCount": 1,
-        "lastUsed": 1784158737957,
-        "createdAt": 1784158737957
-      },
-      {
-        "unitPrice": 520,
-        "settleType": "gift",
-        "serviceType": "睡莲私语",
-        "usageCount": 1,
-        "lastUsed": 1784158660136,
+        "unitPrice": 35,
+        "settleType": "hour",
+        "serviceType": "鹅鸭杀",
+        "usageCount": 25,
+        "lastUsed": 1785653039408,
         "createdAt": 1784111791750
       },
       {
-        "unitPrice": 602,
-        "settleType": "gift",
-        "serviceType": "KFC疯狂星期四全套礼物单",
-        "usageCount": 1,
-        "lastUsed": 1784158584018,
-        "createdAt": 1784158584018
-      },
-      {
-        "unitPrice": 520,
-        "settleType": "gift",
-        "serviceType": "神之一脚",
-        "usageCount": 1,
-        "lastUsed": 1784158305167,
-        "createdAt": 1784158305167
-      },
-      {
-        "unitPrice": 288,
-        "settleType": "gift",
-        "serviceType": "变音药水",
-        "usageCount": 1,
-        "lastUsed": 1784158245850,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 520,
-        "settleType": "gift",
-        "serviceType": "环球全套礼物单",
-        "usageCount": 1,
-        "lastUsed": 1784158171678,
-        "createdAt": 1784158171678
-      },
-      {
-        "unitPrice": 5,
-        "settleType": "gift",
-        "serviceType": "🍬",
-        "usageCount": 1,
-        "lastUsed": 1784157992898,
-        "createdAt": 1784157992898
-      },
-      {
-        "unitPrice": 172,
-        "settleType": "gift",
-        "serviceType": "月星",
-        "usageCount": 1,
-        "lastUsed": 1784157930451,
-        "createdAt": 1784157930451
+        "unitPrice": 35,
+        "settleType": "hour",
+        "serviceType": "一起看",
+        "usageCount": 7,
+        "lastUsed": 1784644581120,
+        "createdAt": 1784111791750
       },
       {
         "unitPrice": 50,
         "settleType": "hour",
         "serviceType": "端游",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157903056,
         "createdAt": 1784111791750
       },
@@ -3963,7 +3042,7 @@
         "unitPrice": 30,
         "settleType": "hour",
         "serviceType": "纯文",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157820241,
         "createdAt": 1784111791750
       },
@@ -3971,7 +3050,7 @@
         "unitPrice": 42,
         "settleType": "hour",
         "serviceType": "树洞",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157800252,
         "createdAt": 1784111791750
       },
@@ -3979,7 +3058,7 @@
         "unitPrice": 40,
         "settleType": "hour",
         "serviceType": "其他手游",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157775522,
         "createdAt": 1784111791750
       },
@@ -3987,7 +3066,7 @@
         "unitPrice": 40,
         "settleType": "hour",
         "serviceType": "纯连",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157747891,
         "createdAt": 1784111791750
       },
@@ -3995,7 +3074,7 @@
         "unitPrice": 18,
         "settleType": "round",
         "serviceType": "蹭金标",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157708296,
         "createdAt": 1784111791750
       },
@@ -4003,7 +3082,7 @@
         "unitPrice": 6,
         "settleType": "round",
         "serviceType": "教学单",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157652793,
         "createdAt": 1784111791750
       },
@@ -4019,7 +3098,7 @@
         "unitPrice": 17,
         "settleType": "round",
         "serviceType": "技术娱乐",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784157600680,
         "createdAt": 1784157600680
       },
@@ -4027,23 +3106,15 @@
         "unitPrice": 17,
         "settleType": "round",
         "serviceType": "技术匹配",
-        "usageCount": 1,
-        "lastUsed": 1784157583256,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 35,
-        "settleType": "hour",
-        "serviceType": "鹅鸭杀",
         "usageCount": 3,
-        "lastUsed": 1784128949864,
+        "lastUsed": 1784157583256,
         "createdAt": 1784111791750
       },
       {
         "unitPrice": 13,
         "settleType": "round",
         "serviceType": "娱乐匹配",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784112051436,
         "createdAt": 1784112051436
       },
@@ -4051,7 +3122,7 @@
         "unitPrice": 15,
         "settleType": "round",
         "serviceType": "娱技匹配",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784112031333,
         "createdAt": 1784111791750
       },
@@ -4059,7 +3130,7 @@
         "unitPrice": 28,
         "settleType": "round",
         "serviceType": "小国蹭标",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784111934405,
         "createdAt": 1784111791750
       },
@@ -4067,624 +3138,62 @@
         "unitPrice": 48,
         "settleType": "round",
         "serviceType": "大国蹭标",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784111861657,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 288,
-        "settleType": "gift",
-        "serviceType": "爱的卡牌",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 104,
-        "settleType": "gift",
-        "serviceType": "冰岛",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 365,
-        "settleType": "gift",
-        "serviceType": "宠物项圈",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 222,
-        "settleType": "gift",
-        "serviceType": "绿色心情",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 10,
-        "settleType": "gift",
-        "serviceType": "满天星",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 104,
-        "settleType": "gift",
-        "serviceType": "美国",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 128,
-        "settleType": "gift",
-        "serviceType": "奶油蛋糕",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 104,
-        "settleType": "gift",
-        "serviceType": "日本",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 104,
-        "settleType": "gift",
-        "serviceType": "瑞士",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 15,
-        "settleType": "gift",
-        "serviceType": "少女发带",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 88,
-        "settleType": "gift",
-        "serviceType": "天使之翼",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 188,
-        "settleType": "gift",
-        "serviceType": "甜心便签",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 5,
-        "settleType": "gift",
-        "serviceType": "同心结",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 35,
-        "settleType": "gift",
-        "serviceType": "雪花恋歌",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 52,
-        "settleType": "gift",
-        "serviceType": "一束花开",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 104,
-        "settleType": "gift",
-        "serviceType": "英国",
-        "usageCount": 1,
-        "lastUsed": 1784111791751,
-        "createdAt": 1784111791751
-      },
-      {
-        "unitPrice": 128,
-        "settleType": "gift",
-        "serviceType": "爱吃小零食",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 168,
-        "settleType": "gift",
-        "serviceType": "薄荷糖果",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 128,
-        "settleType": "gift",
-        "serviceType": "冰芙果酱",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 12,
-        "settleType": "gift",
-        "serviceType": "冰淇淋",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 52,
-        "settleType": "gift",
-        "serviceType": "啵啵奶茶",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 88,
-        "settleType": "gift",
-        "serviceType": "草莓牛奶",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 35,
-        "settleType": "gift",
-        "serviceType": "春游日记",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 25,
-        "settleType": "gift",
-        "serviceType": "蛋挞",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 10900,
-        "settleType": "gift",
-        "serviceType": "蝶赴花期",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 122,
-        "settleType": "gift",
-        "serviceType": "蝶栖芳缕",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 1314,
-        "settleType": "gift",
-        "serviceType": "蝶吻清薇",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 520,
-        "settleType": "gift",
-        "serviceType": "芳丛引蝶",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 52,
-        "settleType": "gift",
-        "serviceType": "好运来财",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
         "createdAt": 1784111791750
       },
       {
         "unitPrice": 45,
         "settleType": "hour",
         "serviceType": "哄睡",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 28,
-        "settleType": "gift",
-        "serviceType": "红豆派",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 5200,
-        "settleType": "gift",
-        "serviceType": "花烬蝶影",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 299,
-        "settleType": "gift",
-        "serviceType": "花园信笺",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 15,
-        "settleType": "gift",
-        "serviceType": "黄金鸡块",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 38,
-        "settleType": "gift",
-        "serviceType": "回忆杀马特",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 8800,
-        "settleType": "gift",
-        "serviceType": "锦蝶缠芳",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 168,
-        "settleType": "gift",
-        "serviceType": "巨无霸汉堡",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 10,
-        "settleType": "gift",
-        "serviceType": "可乐",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 38,
-        "settleType": "gift",
-        "serviceType": "蓝莓蛋挞",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 2888,
-        "settleType": "gift",
-        "serviceType": "浪漫星河",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 99,
-        "settleType": "gift",
-        "serviceType": "栗司巧克力",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 168,
-        "settleType": "gift",
-        "serviceType": "零食果篮",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 520,
-        "settleType": "gift",
-        "serviceType": "莓果布蕾糕",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 3344,
-        "settleType": "gift",
-        "serviceType": "梦幻城堡",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 88,
-        "settleType": "gift",
-        "serviceType": "绵绵奶油熊",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 52,
-        "settleType": "gift",
-        "serviceType": "莫奈心锁",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 5200,
-        "settleType": "gift",
-        "serviceType": "暮晓时分",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 6600,
-        "settleType": "gift",
-        "serviceType": "凝蝶栖棠",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 15200,
-        "settleType": "gift",
-        "serviceType": "琼花舞蝶",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 328,
-        "settleType": "gift",
-        "serviceType": "软萌小猫",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 15,
-        "settleType": "gift",
-        "serviceType": "三明治",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 128,
-        "settleType": "gift",
-        "serviceType": "薯条",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 288,
-        "settleType": "gift",
-        "serviceType": "逃跑菠萝饭",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 99,
-        "settleType": "gift",
-        "serviceType": "天使剪窗",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 52,
-        "settleType": "gift",
-        "serviceType": "望远镜",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 188,
-        "settleType": "gift",
-        "serviceType": "我被控制了",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 88,
-        "settleType": "gift",
-        "serviceType": "我是声优",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 88,
-        "settleType": "gift",
-        "serviceType": "香脆热狗",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 18,
-        "settleType": "gift",
-        "serviceType": "香辣鸡翅",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 21,
-        "settleType": "gift",
-        "serviceType": "小熊棉花糖",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 38,
-        "settleType": "gift",
-        "serviceType": "雪糕",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 1314,
-        "settleType": "gift",
-        "serviceType": "雪国风情",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 20,
-        "settleType": "gift",
-        "serviceType": "洋葱圈",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 35,
-        "settleType": "hour",
-        "serviceType": "一起看",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 520,
-        "settleType": "gift",
-        "serviceType": "雨落汐生",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 999,
-        "settleType": "gift",
-        "serviceType": "云之白泽",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 52,
-        "settleType": "gift",
-        "serviceType": "芝士帕尼尼",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 128,
-        "settleType": "gift",
-        "serviceType": "指南针",
-        "usageCount": 1,
-        "lastUsed": 1784111791750,
-        "createdAt": 1784111791750
-      },
-      {
-        "unitPrice": 3344,
-        "settleType": "gift",
-        "serviceType": "逐蝶寻光",
-        "usageCount": 1,
+        "usageCount": 3,
         "lastUsed": 1784111791750,
         "createdAt": 1784111791750
       }
     ],
-    "lockedFields": {
-      "lockedPeiPei": "下雪",
-      "lockedPaiDan": null,
-      "lockedBoss": null
+    "modeRatios": {
+      "mode1": {
+        "currentRatioId": "msemjr53tsnuhpw5z4l",
+        "customRatios": [
+          {
+            "id": "msemjr53tsnuhpw5z4l",
+            "name": "5/20/75",
+            "group": 5,
+            "platform": 20,
+            "earning": 75,
+            "timestamp": "2026/8/4 20:18:35",
+            "mode": 1
+          },
+          {
+            "id": "msemkia2uetlpfp0489",
+            "name": "5/15/80",
+            "group": 5,
+            "platform": 15,
+            "earning": 80,
+            "timestamp": "2026/8/4 20:19:10",
+            "mode": 1
+          }
+        ]
+      },
+      "mode2": {
+        "currentRatioId": "default",
+        "customRatios": []
+      }
     },
     "nameLearningData": {
-      "corrections": [
-        {
-          "original": "19天才少男",
-          "corrected": "安然",
-          "timestamp": 1784112699024,
-          "lastUsed": 1784112699024,
-          "usageCount": 1,
-          "source": "interactive"
-        },
-        {
-          "original": "91布先生",
-          "corrected": "布奇",
-          "timestamp": 1783702268859,
-          "usageCount": 1,
-          "lastUsed": 1783702268859
-        }
-      ],
+      "corrections": [],
       "patterns": [],
       "stats": {
-        "totalExtractions": 135,
-        "autoCorrections": 1,
+        "totalExtractions": 0,
+        "autoCorrections": 0,
         "userCorrections": 0
       },
-      "commonNames": [
-        "布奇",
-        "安然"
-      ]
-    },
-    "layoutTemplates": [
-      {
-        "id": "layout_tpl_1784159686298",
-        "name": "复用",
-        "hiddenModules": [
-          "customRatioBtn",
-          "duration",
-          "recentBossBtn",
-          "totalPrice",
-          "autoPricePanel"
-        ],
-        "updatedAt": 1784159686298
-      },
-      {
-        "id": "layout_tpl_1783521870266",
-        "name": "常规",
-        "hiddenModules": [
-          "recentBossBtn",
-          "customRatioBtn"
-        ],
-        "updatedAt": 1783521870266
-      }
-    ]
+      "commonNames": []
+    }
   },
   "integrity": {
     "algorithm": "fnv1a32",
-    "value": "e4217f0f"
+    "value": "cef479dd"
   }
 }</script>
 <script>
@@ -4693,7 +3202,7 @@
   const textBox = document.getElementById('backupText');
   const backup = JSON.parse(document.getElementById('embeddedBackup').textContent);
   const payload = JSON.stringify(backup, null, 2);
-  const filename = '码单器内置记忆库_v8.2.json';
+  const filename = '码单器内置记忆库_v8.3.json';
 
   textBox.value = payload;
 
