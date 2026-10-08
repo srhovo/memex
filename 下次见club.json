@@ -1417,6 +1417,16 @@
               "lastUsed": 1790120254828
             },
             {
+              "serviceType": "娱技匹配",
+              "serviceKey": "娱技匹配",
+              "unitPrice": 45,
+              "settleType": "hour",
+              "usageCount": 1,
+              "createdAt": 1790120254828,
+              "updatedAt": 1790120254828,
+              "lastUsed": 1790120254828
+            },
+            {
               "id": "price_item_a8e973b2",
               "serviceType": "娱技匹配",
               "serviceKey": "娱技匹配",
@@ -1481,17 +1491,6 @@
               "lastUsed": 1790120254828
             },
             {
-              "id": "price_item_313cf0b5",
-              "serviceType": "教学单",
-              "serviceKey": "教学单",
-              "unitPrice": 6,
-              "settleType": "round",
-              "usageCount": 7,
-              "createdAt": 1784111791750,
-              "updatedAt": 1790120254828,
-              "lastUsed": 1790120254828
-            },
-            {
               "id": "price_item_61b43b84",
               "serviceType": "树洞",
               "serviceKey": "树洞",
@@ -1550,7 +1549,7 @@
               "id": "price_item_9334aacd",
               "serviceType": "鹅鸭杀",
               "serviceKey": "鹅鸭杀",
-              "unitPrice": 35,
+              "unitPrice": 40,
               "settleType": "hour",
               "usageCount": 62,
               "createdAt": 1784111791750,
@@ -1560,10 +1559,17 @@
           ],
           "rules": [
             {
-              "id": "price_rule_season_00_星耀及以下_lower",
+              "id": "price_rule_season_00_starlight_below",
               "kind": "rankRange",
-              "rangeLabel": "钻石及以下",
-              "aliases": [],
+              "rangeLabel": "星耀及以下",
+              "aliases": [
+                "星耀",
+                "星耀1",
+                "星耀2",
+                "星耀3",
+                "星耀4",
+                "星耀5"
+              ],
               "alias": "",
               "rankType": "lowerTier",
               "minStar": null,
@@ -1592,40 +1598,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_01_星耀及以下_named",
-              "kind": "rankRange",
-              "rangeLabel": "星耀及以下",
-              "aliases": [],
-              "alias": "",
-              "rankType": "namedTier",
-              "minStar": null,
-              "maxStar": null,
-              "namedRanks": [
-                "星耀",
-                "星耀1",
-                "星耀2",
-                "星耀3",
-                "星耀4",
-                "星耀5"
-              ],
-              "prices": {
-                "normal": {
-                  "round": 15,
-                  "hour": 45
-                },
-                "carry": {
-                  "round": 18,
-                  "hour": 54
-                },
-                "starGuarantee": {
-                  "round": 20
-                }
-              },
-              "createdAt": 1790120254828,
-              "updatedAt": 1790120254828
-            },
-            {
-              "id": "price_rule_season_02_020星",
+              "id": "price_rule_season_01_0-20",
               "kind": "rankRange",
               "rangeLabel": "0-20星",
               "aliases": [],
@@ -1651,7 +1624,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_03_2135星",
+              "id": "price_rule_season_02_21-35",
               "kind": "rankRange",
               "rangeLabel": "21-35星",
               "aliases": [],
@@ -1677,7 +1650,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_04_3650星",
+              "id": "price_rule_season_03_36-50",
               "kind": "rankRange",
               "rangeLabel": "36-50星",
               "aliases": [],
@@ -1703,7 +1676,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_05_5165星",
+              "id": "price_rule_season_04_51-65",
               "kind": "rankRange",
               "rangeLabel": "51-65星",
               "aliases": [],
@@ -1729,7 +1702,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_06_6680星",
+              "id": "price_rule_season_05_66-80",
               "kind": "rankRange",
               "rangeLabel": "66-80星",
               "aliases": [],
@@ -1755,7 +1728,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_07_81100星",
+              "id": "price_rule_season_06_81-100",
               "kind": "rankRange",
               "rangeLabel": "81-100星",
               "aliases": [],
@@ -1781,7 +1754,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_08_101120星",
+              "id": "price_rule_season_07_101-120",
               "kind": "rankRange",
               "rangeLabel": "101-120星",
               "aliases": [],
@@ -1807,7 +1780,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_09_121135星",
+              "id": "price_rule_season_08_121-135",
               "kind": "rankRange",
               "rangeLabel": "121-135星",
               "aliases": [],
@@ -1833,7 +1806,7 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_season_10_136150星",
+              "id": "price_rule_season_09_136-150",
               "kind": "rankRange",
               "rangeLabel": "136-150星",
               "aliases": [],
@@ -1883,6 +1856,21 @@
               "prices": {
                 "round": 17,
                 "hour": 51
+              },
+              "legacyManaged": true,
+              "createdAt": 1790120254828,
+              "updatedAt": 1790120254828
+            },
+            {
+              "id": "price_rule_2a803f3d",
+              "kind": "exact",
+              "serviceName": "娱技匹配",
+              "serviceKey": "娱技匹配",
+              "aliases": [],
+              "alias": "",
+              "prices": {
+                "round": 15,
+                "hour": 45
               },
               "legacyManaged": true,
               "createdAt": 1790120254828,
@@ -1994,14 +1982,14 @@
               "aliases": [],
               "alias": "",
               "prices": {
-                "hour": 35
+                "hour": 40
               },
               "legacyManaged": true,
               "createdAt": 1790120254828,
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_ent_64998411",
+              "id": "price_rule_ent_33730895",
               "kind": "exact",
               "serviceName": "挂麦",
               "serviceKey": "挂麦",
@@ -2029,20 +2017,6 @@
               "updatedAt": 1790120254828
             },
             {
-              "id": "price_rule_2a803f3d",
-              "kind": "exact",
-              "serviceName": "娱技匹配",
-              "serviceKey": "娱技匹配",
-              "aliases": [],
-              "alias": "",
-              "prices": {
-                "round": 15
-              },
-              "legacyManaged": true,
-              "createdAt": 1790120254828,
-              "updatedAt": 1790120254828
-            },
-            {
               "id": "price_rule_613165f1",
               "kind": "exact",
               "serviceName": "技术娱乐",
@@ -2051,20 +2025,6 @@
               "alias": "",
               "prices": {
                 "round": 17
-              },
-              "legacyManaged": true,
-              "createdAt": 1790120254828,
-              "updatedAt": 1790120254828
-            },
-            {
-              "id": "price_rule_ec218d60",
-              "kind": "exact",
-              "serviceName": "教学单",
-              "serviceKey": "教学单",
-              "aliases": [],
-              "alias": "",
-              "prices": {
-                "round": 6
               },
               "legacyManaged": true,
               "createdAt": 1790120254828,
@@ -2107,11 +2067,12 @@
                 "教学"
               ],
               "prices": {
-                "round": 6
+                "round": 6,
+                "hour": 18
               },
               "enabled": true,
               "createdAt": 1785654687053,
-              "updatedAt": 1785654687053
+              "updatedAt": 1790120254828
             },
             {
               "id": "surcharge_rule_f40f91fd",
@@ -3043,6 +3004,14 @@
         "createdAt": 1784112051436
       },
       {
+        "unitPrice": 45,
+        "settleType": "hour",
+        "serviceType": "娱技匹配",
+        "usageCount": 1,
+        "lastUsed": 1790120254828,
+        "createdAt": 1790120254828
+      },
+      {
         "unitPrice": 15,
         "settleType": "round",
         "serviceType": "娱技匹配",
@@ -3091,14 +3060,6 @@
         "createdAt": 1790120254828
       },
       {
-        "unitPrice": 6,
-        "settleType": "round",
-        "serviceType": "教学单",
-        "usageCount": 7,
-        "lastUsed": 1790120254828,
-        "createdAt": 1784111791750
-      },
-      {
         "unitPrice": 42,
         "settleType": "hour",
         "serviceType": "树洞",
@@ -3139,7 +3100,7 @@
         "createdAt": 1784111791750
       },
       {
-        "unitPrice": 35,
+        "unitPrice": 40,
         "settleType": "hour",
         "serviceType": "鹅鸭杀",
         "usageCount": 62,
@@ -3234,6 +3195,6 @@
   },
   "integrity": {
     "algorithm": "fnv1a32",
-    "value": "84f6b9dd"
+    "value": "48bf85c6"
   }
 }
